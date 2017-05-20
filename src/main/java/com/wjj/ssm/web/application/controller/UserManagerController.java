@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.wjj.ssm.web.application.model.User;
 import com.wjj.ssm.web.application.service.UserManagerService;
@@ -23,6 +24,7 @@ public class UserManagerController
     {
         System.out.println("start");
     }
+    
     @RequestMapping("/showUser")
     public String toIndex(HttpServletRequest request, Model model)
     {
@@ -36,13 +38,22 @@ public class UserManagerController
         List<User> userList = userService.queryAllUser();
         StringBuffer sb = new StringBuffer();
         System.out.println(userList);
-        for(User user : userList)
+        for (User user : userList)
         {
             sb.append(user).append("<br>");
         }
         model.addAttribute("user", sb);
         return "User";
-
         
+    }
+    
+    @RequestMapping("/getalluser.action")
+    public ModelAndView getAllUser()
+    {
+        ModelAndView model = new ModelAndView();
+        List<User> userList = userService.queryAllUser();
+        model.addObject("user", userList);// 表示向页面传递的数据
+        model.setViewName("/User");// 表示呈现的页面
+        return model;
     }
 }
