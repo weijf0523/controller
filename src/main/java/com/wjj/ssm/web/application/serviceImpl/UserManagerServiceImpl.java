@@ -25,8 +25,7 @@ public class UserManagerServiceImpl implements UserManagerService
     @Override
     public void updateUser(User user)
     {
-        // TODO Auto-generated method stub
-        
+        userDao.updateByPrimaryKey(user);
     }
     
     @Override
@@ -38,10 +37,10 @@ public class UserManagerServiceImpl implements UserManagerService
     @Override
     public void deleteUser(String id)
     {
-        // TODO Auto-generated method stub
+        userDao.deleteByPrimaryKey(id);
         
     }
-
+    
     @Override
     public List<User> queryAllUser()
     {

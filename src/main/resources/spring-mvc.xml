@@ -31,8 +31,8 @@
     </bean>
 
     <!-- 对静态资源的访问 -->
-    <!-- <mvc:resources mapping="/js/**" location="/js/" /> <mvc:resources mapping="/css/**" 
-        location="/css/" /> -->
+	<mvc:resources mapping="/jsc/**" location="/js/" />
+	<mvc:resources mapping="/css/**" location="/css/" /> 
 
     <!-- 自动扫描该包，使SpringMVC认为包下用了@controller注解的类是控制器 -->
     <context:component-scan base-package="com.wjj.ssm.web.application.controller" />
@@ -40,7 +40,6 @@
     <!-- 添加注解驱动 -->
     <mvc:annotation-driven enable-matrix-variables="true" />
     <!-- 允许对静态资源文件的访问 -->
-
     <mvc:default-servlet-handler />
 
     <!-- 定义跳转的文件的前后缀 ，视图模式配置 -->

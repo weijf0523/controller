@@ -7,7 +7,9 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.wjj.ssm.web.application.model.User;
@@ -56,4 +58,18 @@ public class UserManagerController
         model.setViewName("/User");// 表示呈现的页面
         return model;
     }
+    
+    @RequestMapping("/checkUserLogin")
+    public @ResponseBody User checkUserLogin(@RequestBody User user)
+    {
+        System.out.println("checkuser start"+user);
+        if(user.getUsername() == null)
+        {
+            System.out.println("null!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        }
+        System.out.println(user);
+        user.setUsername("wjj");
+        return user;
+    }
+
 }
