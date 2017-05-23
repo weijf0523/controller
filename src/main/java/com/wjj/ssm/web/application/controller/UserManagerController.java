@@ -68,7 +68,7 @@ public class UserManagerController
             System.out.println("null!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         }
         System.out.println(user);
-        user.setUsername("wjj");
+        user.setUsername("do some thing");
         return user;
     }
 

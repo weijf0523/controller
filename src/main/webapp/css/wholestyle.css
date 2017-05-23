@@ -1,0 +1,25 @@
+body{ background:#FFFFDF; background:url(../img/pixiv_63017907.jpg) fixed; background-repeat: repeat;  background-position: top center;}
+
+
+/*模糊效果*/
+.blur {	
+    filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+    
+    -webkit-filter: blur(10px); /* Chrome, Opera */
+       -moz-filter: blur(10px);
+        -ms-filter: blur(10px);    
+            filter: blur(10px);
+			
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+	
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+.xx{}
+
+
+.signup-form { width: 300px; margin-left: auto; margin-right: auto; text-align: center; background-color: rgba(255, 255, 255, 0.92); width: 363px; padding: 50px 0; border-radius: 5px; font-size: 16px; }
+.signup-form__submit{ display: block; margin: 0 auto; margin-bottom: 8px; width: 300px; height: 40px; line-height: 40px; background-color: #25c6ff; color: #FFF; font-weight: bold; outline: none; }

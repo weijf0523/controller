@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test Page</title>
+<link rel="stylesheet" href="css/wholestyle.css" type="text/css">
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script>
+	function FirstClick() {
+		var div = document.getElementById('body');
+		div.setAttribute("class", "xx");
+	}
+</script>
+<script type="text/javascript">
+	function jj() {
+		var user_json = {
+			"id" : "00",
+			"username" : "00",
+			"password" : "00",
+			"nickname" : "00",
+			"level" : 1,
+			"score" : 1,
+			"email" : "00",
+			"qqnum" : "00",
+			"phonenum" : "00",
+			"status" : false
+		}
+		//jså¯¹è±¡è½¬æ¢æJSONå­ç¬¦ä¸²Â Â 
+		var jason_str = JSON.stringify(user_json);
+		//Ajaxåéæ°æ®ç»åå°Â Â 
+		$.ajax({
+			url : "/checkUserLogin",
+			cache : true,
+			type : "post",
+			datatype : "json",
+			contentType : "application/json",
+			data : jason_str,
+			success : function(data) {
+				alert(data.username);
+			}
+
+		});
+	}
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+		jj();
+	</script>
+	<div class="blur" id="body" onClick="FirstClick()">
+		<div class="signup-form">
+				<span>用户名：</span> <input
+					type="text" /><br /> <span>密码：</span><input
+					type="text" />
+					
+					<a class= "signup-form__submit" href="/showUser">登陸</a>
+		</div>
+	</div>
+</body>
+
+</html>

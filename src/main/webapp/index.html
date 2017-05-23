@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<!-- saved from url=(0015)http://Nevernow.net/ -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Nevernow的个人站</title>
+<meta name="description" content="Nevernow个人的网站">
+<meta name="keywords" content="Nevernow">
+<link rel="stylesheet" href="css/packet1/global.css" type="text/css">
+<link rel="stylesheet" id="changeable_stylesheet" href="css/packet1/army.css"
+	type="text/css">
+<link rel="stylesheet" href="css/packet1/header-1.css" type="text/css">
+<link rel="stylesheet" href="css/packet1/slider-1.css" type="text/css">
+<link rel="stylesheet" href="css/packet1/prettyPhoto.css" type="text/css">
+<link rel="stylesheet" href="css/wholestyle.css" type="text/css">
+<script src="js/packet1/ga.js"></script>
+<script src="js/packet1/jquery.min.js"></script>
+<script src="js/packet1/header-1.js"></script>
+<script src="js/packet1/jquery.easing.js"></script>
+<script type="text/javascript">
+	var show_slider2_grid = 'true';
+	var show_slider_title = 'true';
+	var slider_autoslide = '4000';
+</script>
+<script src="js/packet1/slider-1.js"></script>
+
+<script type="text/javascript">
+	function jj() {
+		var user_json = {
+			"id" : "00",
+			"username" : "00",
+			"password" : "00",
+			"nickname" : "00",
+			"level" : 1,
+			"score" : 1,
+			"email" : "00",
+			"qqnum" : "00",
+			"phonenum" : "00",
+			"status" : false
+		}
+		//jså¯¹è±¡è½¬æ¢æJSONå­ç¬¦ä¸²Â Â 
+		var jason_str = JSON.stringify(user_json);
+		//Ajaxåéæ°æ®ç»åå°Â Â 
+		$.ajax({
+			url : "/checkUserLogin",
+			cache : true,
+			type : "post",
+			datatype : "json",
+			contentType : "application/json",
+			data : jason_str,
+			success : function(data) {
+				alert(data.username);
+			}
+
+		});
+	}
+</script>
+</head>
+
+
+
+<body class="stencil_camouflage option-slider-1">
+<script >
+ function dj()
+ {
+	 alert("do");
+	 var div = document.getElementById('boty'); 
+	div.setAttribute("class", "xx"); 
+ }
+</script>
+	<script type="text/javascript">
+		jj();
+	</script>
+	<div id="header_container">
+		<div id="header_wrapper">
+			<div class="header" id="header-1">
+
+
+				<div class="logo_holder">
+					<a href="#"><img src="./img/logo.png"></a>
+				</div>
+				<!-- //Navigation// -->
+				<div id="navigation">
+					<div class="menu-navigation-container">
+						<div class="menu-navigation-color-holder" style="display: none;"></div>
+						<div class="menu-hacg-container">
+							<ul id="menu-navigation" class="menu">
+								<li id="menu-item-369"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-369 has-sub-menu"><a
+									href="#"><span class="top-menu-item">最近更新</span><span
+										class="menu-description">Start here</span></a>
+									<ul class="sub-menu" style="top: 99px;">
+										<li id="menu-item-371"
+											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-371 odd"><a
+											href="/showUser">showUser</a></li>
+										<li id="menu-item-372"
+											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-372 even"><a
+											href="#">Comic</a></li>
+										<li id="menu-item-373"
+											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-373 odd"><a
+											href="#">Games</a></li>
+									</ul></li>
+								<li id="menu-item-370"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-370"><a
+									href="/page/static/wenzhang.html"><span class="top-menu-item">文章</span><span
+										class="menu-description">Blog news</span></a></li>
+								<li id="menu-item-375"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-375"><a
+									href="#"><span class="top-menu-item">音樂</span><span
+										class="menu-description">Anime Music</span></a></li>
+								<li id="menu-item-377"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-377"><a
+									href="page/static/shuoming.html"><span class="top-menu-item">說明</span><span
+										class="menu-description">About</span></a></li>
+								<li id="menu-item-374"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-374"><a
+									href="#"><span class="top-menu-item">揭示板</span><span
+										class="menu-description">BBS</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- END div.menu-navigation-container -->
+				</div>
+				<!-- END div#navigation -->
+				<div class="clear"></div>
+			</div>
+			<!-- END div#header -->
+		</div>
+		<!-- END div#header_wrapper -->
+	</div>
+	<!-- END div#header_container -->
+	<div id="slider_container">
+		<div id="slider_wrapper">
+
+			<div id="slider-1">
+				<div id="slider-content">
+					<div class="cube" id="slider_0_0"
+						style="left: 0px; top: 0px; width: 157px; height: 157px;">
+						<div class="inner_a"
+							style="width: 156px; height: 156px; display: block; top: -156px; left: 156px; opacity: 0; background-image: url(img/q1.jpg); background-position: 0px 0px;"></div>
+						<div class="inner_b"
+							style="width: 155px; height: 156px; display: block; top: 0px; left: 1px; opacity: 1; background-image: url(img/q1.jpg); background-position: 0px 0px;"></div>
+					</div>
+					<div class="cube" id="slider_1_0"
+						style="left: 157px; top: 0px; width: 157px; height: 157px;">
+						<div class="inner_a"
+							style="width: 156px; height: 156px; display: block; top: -156px; left: 156px; opacity: 0; background-image: url(img/q1.jpg); background-position: -157px 0px;"></div>
+						<div class="inner_b"
+							style="width: 156px; height: 156px; display: block; top: 0px; left: 0px; opacity: 1; background-image: url(img/q1.jpg); background-position: -157px 0px;"></div>
+					</div>
+					<div class="cube" id="slider_2_0"
+						style="left: 314px; top: 0px; width: 157px; height: 157px;">
+						<div class="inner_a"
+							style="width: 156px; height: 156px; display: block; top: -156px; left: 156px; opacity: 0; background-image: url(img/q1.jpg); background-position: -314px 0px;"></div>
+						<div class="inner_b"
+							style="width: 156px; height: 156px; display: block; top: 0px; left: 0px; opacity: 1; background-image: url(img/q1.jpg); background-position: -314px 0px;"></div>
+					</div>
+					<div class="cube" id="slider_3_0"
+						style="left: 471px; top: 0px; width: 157px; height: 157px;">
+						<div class="inner_a"
+							style="width: 156px; height: 156px; display: block; top: -156px; left: 156px; opacity: 0; background-image: url(img/q1.jpg); background-position: -471px 0px;"></div>
+						<div class="inner_b"
+							style="width: 156px; height: 156px; display: block; top: 0px; left: 0px; opacity: 1; background-image: url(img/q1.jpg); background-position: -471px 0px;"></div>
+					</div>
+					<div class="cube" id="slider_4_0"
+						style="left: 628px; top: 0px; width: 157px; height: 157px;">
+						<div class="inner_a"
+							style="width: 156px; height: 156px; display: block; top: -156px; left: 156px; opacity: 0; background-image: url(img/q1.jpg); background-position: -628px 0px;"></div>
+						<div class="inner_b"
+							style="width: 156px; height: 156px; display: block; top: 0px; left: 0px; opacity: 1; background-image: url(img/q1.jpg); background-position: -628px 0px;"></div>
+					</div>
+					<div class="cube" id="slider_5_0"
+						style="left: 785px; top: 0px; width: 155px; height: 157px;">
+						<div class="inner_a"
+							style="width: 156px; height: 156px; display: block; top: -156px; left: 156px; opacity: 0; background-image: url(img/q1.jpg); background-position: -785px 0px;"></div>
+						<div class="inner_b"
+							style="width: 156px; height: 156px; display: block; top: 0px; left: 0px; opacity: 1; background-image: url(img/q1.jpg); background-position: -785px 0px;"></div>
+					</div>
+					<div class="cube" id="slider_0_1"
+						style="left: 0px; top: 157px; width: 157px; height: 157px;">
+						<div class="inner_a"
+							style="width: 156px; height: 156px; display: block; top: -156px; left: 156px; opacity: 0; background-image: url(img/q1.jpg); background-position: 0px -157px;"></div>
+						<div class="inner_b"
+							style="width: 156px; height: 156px; display: block; top: 0px; left: 0px; opacity: 1; background-image: url(img/q1.jpg); background-position: 0px -157px;"></div>
+					</div>
+					<div class="cube" id="slider_1_1"
+						style="left: 157px; top: 157px; width: 157px; height: 157px;">
+						<div class="inner_a"
+							style="width: 156px; height: 156px; display: block; top: -156px; left: 156px; opacity: 0; background-image: url(img/q1.jpg); background-position: -157px -157px;"></div>
+						<div class="inner_b"
+							style="width: 156px; height: 156px; display: block; top: 0px; left: 0px; opacity: 1; background-image: url(img/q1.jpg); background-position: -157px -157px;"></div>
+					</div>
+					<div class="cube" id="slider_2_1"
+						style="left: 314px; top: 157px; width: 157px; height: 157px;">
+						<div class="inner_a"
+							style="width: 156px; height: 156px; display: block; top: -156px; left: 156px; opacity: 0; background-image: url(img/q1.jpg); background-position: -314px -157px;"></div>
+						<div class="inner_b"
+							style="width: 156px; height: 156px; display: block; top: 0px; left: 0px; opacity: 1; background-image: url(img/q1.jpg); background-position: -314px -157px;"></div>
+					</div>
+					<div class="cube" id="slider_3_1"
+						style="left: 471px; top: 157px; width: 157px; height: 157px;">
+						<div class="inner_a"
+							style="width: 156px; height: 156px; display: block; top: -156px; left: 156px; opacity: 0; background-image: url(img/q1.jpg); background-position: -471px -157px;"></div>
+						<div class="inner_b"
+							style="width: 156px; height: 156px; display: block; top: 0px; left: 0px; opacity: 1; background-image: url(img/q1.jpg); background-position: -471px -157px;"></div>
+					</div>
+					<div class="cube" id="slider_4_1"
+						style="left: 628px; top: 157px; width: 157px; height: 157px;">
+						<div class="inner_a"
+							style="width: 156px; height: 156px; display: block; top: -156px; left: 156px; opacity: 0; background-image: url(img/q1.jpg); background-position: -628px -157px;"></div>
+						<div class="inner_b"
+							style="width: 156px; height: 156px; display: block; top: 0px; left: 0px; opacity: 1; background-image: url(img/q1.jpg); background-position: -628px -157px;"></div>
+					</div>
+					<div class="cube" id="slider_5_1"
+						style="left: 785px; top: 157px; width: 155px; height: 157px;">
+						<div class="inner_a"
+							style="width: 156px; height: 156px; display: block; top: -156px; left: 156px; opacity: 0; background-image: url(img/q1.jpg); background-position: -785px -157px;"></div>
+						<div class="inner_b"
+							style="width: 156px; height: 156px; display: block; top: 0px; left: 0px; opacity: 1; background-image: url(img/q1.jpg); background-position: -785px -157px;"></div>
+					</div>
+					<div class="cube" id="slider_0_2"
+						style="left: 0px; top: 314px; width: 157px; height: 156px;">
+						<div class="inner_a"
+							style="width: 156px; height: 156px; display: block; top: -156px; left: 156px; opacity: 0; background-image: url(img/q1.jpg); background-position: 0px -314px;"></div>
+						<div class="inner_b"
+							style="width: 156px; height: 156px; display: block; top: 0px; left: 0px; opacity: 1; background-image: url(img/q1.jpg); background-position: 0px -314px;"></div>
+					</div>
+					<div class="cube" id="slider_1_2"
+						style="left: 157px; top: 314px; width: 157px; height: 156px;">
+						<div class="inner_a"
+							style="width: 156px; height: 156px; display: block; top: -156px; left: 156px; opacity: 0; background-image: url(img/q1.jpg); background-position: -157px -314px;"></div>
+						<div class="inner_b"
+							style="width: 156px; height: 156px; display: block; top: 0px; left: 0px; opacity: 1; background-image: url(img/q1.jpg); background-position: -157px -314px;"></div>
+					</div>
+					<div class="cube" id="slider_2_2"
+						style="left: 314px; top: 314px; width: 157px; height: 156px;">
+						<div class="inner_a"
+							style="width: 156px; height: 156px; display: block; top: -156px; left: 156px; opacity: 0; background-image: url(img/q1.jpg); background-position: -314px -314px;"></div>
+						<div class="inner_b"
+							style="width: 156px; height: 156px; display: block; top: 0px; left: 0px; opacity: 1; background-image: url(img/q1.jpg); background-position: -314px -314px;"></div>
+					</div>
+					<div class="cube" id="slider_3_2"
+						style="left: 471px; top: 314px; width: 157px; height: 156px;">
+						<div class="inner_a"
+							style="width: 156px; height: 156px; display: block; top: -156px; left: 156px; opacity: 0; background-image: url(img/q1.jpg); background-position: -471px -314px;"></div>
+						<div class="inner_b"
+							style="width: 156px; height: 156px; display: block; top: 0px; left: 0px; opacity: 1; background-image: url(img/q1.jpg); background-position: -471px -314px;"></div>
+					</div>
+					<div class="cube" id="slider_4_2"
+						style="left: 628px; top: 314px; width: 157px; height: 156px;">
+						<div class="inner_a"
+							style="width: 156px; height: 156px; display: block; top: -156px; left: 156px; opacity: 0; background-image: url(img/q1.jpg); background-position: -628px -314px;"></div>
+						<div class="inner_b"
+							style="width: 156px; height: 156px; display: block; top: 0px; left: 0px; opacity: 1; background-image: url(img/q1.jpg); background-position: -628px -314px;"></div>
+					</div>
+					<div class="cube" id="slider_5_2"
+						style="left: 785px; top: 314px; width: 155px; height: 156px;">
+						<div class="inner_a"
+							style="width: 156px; height: 156px; display: block; top: -156px; left: 156px; opacity: 0; background-image: url(img/q1.jpg); background-position: -785px -314px;"></div>
+						<div class="inner_b"
+							style="width: 156px; height: 156px; display: block; top: 0px; left: 0px; opacity: 1; background-image: url(img/q1.jpg); background-position: -785px -314px;"></div>
+					</div>
+					<div class="slider_info_holder">
+						<div class="info_line">
+							<a href="#" style="opacity: 1; font-size: 48px;">DoujinJComic</a>
+						</div>
+
+						<ul class="slider_nav" style="opacity: 1;">
+							<li class="">0</li>
+							<li class="">1</li>
+							<li class="slider_nav_active">2</li>
+							<li>3</li>
+							<li>4</li>
+						</ul>
+					</div>
+				</div>
+				<div id="slider-feed">
+					<div class="slide">
+						<img class="slide_source" alt="" src="./img/q1.jpg">
+						<div class="transition">random</div>
+						<div class="title">DoujinJComic</div>
+						<div class="lightbox">0</div>
+						<div class="link_url">#</div>
+						<div class="s_description"></div>
+					</div>
+					<div class="slide">
+						<img class="slide_source" alt="" src="./img/q2.jpg">
+						<div class="transition">random</div>
+						<div class="title">DoujinJComic</div>
+						<div class="lightbox">0</div>
+						<div class="link_url">#</div>
+						<div class="s_description"></div>
+					</div>
+					<div class="slide">
+						<img class="slide_source" alt="" src="./img/q3.jpg">
+						<div class="transition">random</div>
+						<div class="title">DoujinJComic</div>
+						<div class="lightbox">0</div>
+						<div class="link_url">#</div>
+						<div class="s_description"></div>
+					</div>
+					<div class="slide">
+						<img class="slide_source" alt="" src="./img/q4.jpg">
+						<div class="transition">random</div>
+						<div class="title">DoujinJComic</div>
+						<div class="lightbox">0</div>
+						<div class="link_url">#</div>
+						<div class="s_description"></div>
+					</div>
+					<div class="slide">
+						<img class="slide_source" alt="" src="./img/q5.jpg">
+						<div class="transition">random</div>
+						<div class="title">DoujinJComic</div>
+						<div class="lightbox">0</div>
+						<div class="link_url">#</div>
+						<div class="s_description"></div>
+					</div>
+					<div class="slider-img-count">5</div>
+				</div>
+			</div>
+		</div>
+		<!-- //Message// -->
+		<div id="message_container">
+			<div id="message_wrapper">
+				<div class="message">
+					欢迎光临<a href="#">Nevernow</a>的小窝窝<br>
+				</div>
+
+
+
+				<!-- END div.message -->
+			</div>
+		</div>
+		<!-- footer -->
+		<div id="footer2_container">
+			<div id="footer2_wrapper">
+				<div id="footer2">
+					<div class="left">
+						Copyright © 2014 Nevernow All Rights Reserved
+						<audio autoplay="autoplay">
+							<source src="mp3/BGM.mp3" type="audio/mpeg">
+						</audio>
+					</div>
+					<div class="right">
+						王俊杰<a style="text-decoration: none" href="#"><span
+							style="color: #888888;"></span></a>
+					</div>
+				</div>
+				<!-- END div.right -->
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //Footer END// -->
+	<div id="grid"></div>
+	<script src="js/packet1/snowstorm.js"></script>
+
+
+
+</body>
+</html>
